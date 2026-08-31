@@ -80,7 +80,8 @@ endif
 
 # TouchGesture
 PRODUCT_PACKAGES += \
-    TouchGestures
+    TouchGestures \
+    NPlayer
 
 # Updater
 include vendor/custom/config/ota.mk

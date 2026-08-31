@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2024-2026 The LibreMobileOS Foundation
+     SPDX-License-Identifier: Apache-2.0
+-->
+<permissions>
+    <privapp-permissions package="org.lmodroid.freeform">
+        <permission name="android.permission.MANAGE_ACTIVITY_TASKS" />
+        <permission name="android.permission.INTERNAL_SYSTEM_WINDOW" />
+        <permission name="android.permission.SYSTEM_ALERT_WINDOW" />
+        <permission name="android.permission.START_ANY_ACTIVITY" />
+        <permission name="android.permission.STOP_APP_SWITCHES" />
+        <permission name="android.permission.SET_ACTIVITY_WATCHER" />
+        <permission name="android.permission.MONITOR_INPUT" />
+        <permission name="android.permission.INPUT_CONSUMER" />
+        <permission name="android.permission.INTERACT_ACROSS_USERS" />
+        <permission name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+        <permission name="android.permission.PACKAGE_USAGE_STATS" />
+        <permission name="android.permission.ACCESS_SHORTCUTS" />
+        <permission name="android.permission.READ_FRAME_BUFFER" />
+        <permission name="android.permission.QUERY_ALL_PACKAGES" />
+        <permission name="android.permission.STATUS_BAR_SERVICE" />
+        <permission name="android.permission.CONTROL_REMOTE_APP_TRANSITION_ANIMATIONS" />
+        <permission name="android.permission.START_ACTIVITIES_FROM_BACKGROUND" />
+    </privapp-permissions>
+
+    <privapp-permissions package="com.libremobileos.freeform">
+        <permission name="android.permission.MANAGE_ACTIVITY_TASKS" />
+        <permission name="android.permission.INTERNAL_SYSTEM_WINDOW" />
+        <permission name="android.permission.SYSTEM_ALERT_WINDOW" />
+        <permission name="android.permission.START_ANY_ACTIVITY" />
+        <permission name="android.permission.STOP_APP_SWITCHES" />
+        <permission name="android.permission.SET_ACTIVITY_WATCHER" />
+        <permission name="android.permission.MONITOR_INPUT" />
+        <permission name="android.permission.INPUT_CONSUMER" />
+        <permission name="android.permission.INTERACT_ACROSS_USERS" />
+        <permission name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+        <permission name="android.permission.PACKAGE_USAGE_STATS" />
+        <permission name="android.permission.ACCESS_SHORTCUTS" />
+        <permission name="android.permission.READ_FRAME_BUFFER" />
+        <permission name="android.permission.QUERY_ALL_PACKAGES" />
+        <permission name="android.permission.STATUS_BAR_SERVICE" />
+        <permission name="android.permission.CONTROL_REMOTE_APP_TRANSITION_ANIMATIONS" />
+        <permission name="android.permission.START_ACTIVITIES_FROM_BACKGROUND" />
+    </privapp-permissions>
+</permissions>

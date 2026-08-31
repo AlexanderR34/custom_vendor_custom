@@ -393,5 +393,7 @@
         <item>device_personalization_services/WallpaperEffects__use_gpu=true</item>
         <item>device_personalization_services/WallpaperEffects__use_tpu=false</item>
     </string-array>
+
+    <bool name="config_supportsMultiWindow">true</bool>
 </resources>
 

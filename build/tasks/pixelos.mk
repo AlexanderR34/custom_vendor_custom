@@ -16,7 +16,7 @@
 # -----------------------------------------------------------------
 # PixelOS OTA update package
 
-CUSTOM_TARGET_PACKAGE := $(PRODUCT_OUT)/PixelOS_$(CUSTOM_VERSION).zip
+CUSTOM_TARGET_PACKAGE := $(PRODUCT_OUT)/Project_Diva$(1.0).zip
 
 MD5 := prebuilts/build-tools/path/$(HOST_PREBUILT_TAG)/md5sum
 

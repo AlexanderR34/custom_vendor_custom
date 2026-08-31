@@ -1,0 +1,9 @@
+android_app_import {
+    name: "NPlayer",
+    apk: "NPlayer.apk",
+    certificate: "platform",
+    dex_preopt: {
+        enabled: false,
+    },
+    product_specific: true,
+}
