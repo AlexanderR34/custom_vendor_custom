@@ -88,3 +88,8 @@ include vendor/custom/config/ota.mk
 
 # Version
 include vendor/custom/config/version.mk
+
+# Exclude AOSP Quickstep / Launcher3 when using Pixel Launcher
+PRODUCT_PACKAGES := $(filter-out Launcher3 Launcher3QuickStep Launcher3QuickStepGo Launcher3Overlay,$(PRODUCT_PACKAGES))
+PRODUCT_DEXPREOPT_SPEED_APPS := $(filter-out Launcher3 Launcher3QuickStep Launcher3QuickStepGo,$(PRODUCT_DEXPREOPT_SPEED_APPS))
+
