@@ -10,11 +10,11 @@ CUSTOM_VERSION_PROP := seventeen
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.custom.build.date=$(CUSTOM_BUILD_DATE) \
     ro.custom.device=$(CUSTOM_BUILD) \
-    ro.custom.version=Project Diva $(DIVA_VERSION) \
-    ro.diva.version=Project Diva $(DIVA_VERSION) \
+    ro.custom.version=$(CUSTOM_VERSION) \
+    ro.diva.version=$(DIVA_VERSION) \
     ro.build.id=Project_Diva \
     ro.system.build.id=Project_Diva \
-    ro.build.display.id=Project Diva $(DIVA_VERSION) \
+    ro.build.display.id=Project_Diva_$(DIVA_VERSION) \
     net.pixelos.version=$(CUSTOM_VERSION_PROP)
 
 # Updater
