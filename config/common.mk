@@ -89,7 +89,7 @@ include vendor/custom/config/ota.mk
 # Version
 include vendor/custom/config/version.mk
 
-# Include Launcher3 alongside Pixel Launcher
-PRODUCT_PACKAGES += \
-    Launcher3QuickStep
+# Ensure Pixel Launcher is the sole launcher
+PRODUCT_PACKAGES := $(filter-out Launcher3 Launcher3QuickStep Launcher3QuickStepGo Launcher3Overlay,$(PRODUCT_PACKAGES))
+PRODUCT_DEXPREOPT_SPEED_APPS := $(filter-out Launcher3 Launcher3QuickStep Launcher3QuickStepGo,$(PRODUCT_DEXPREOPT_SPEED_APPS))
 
