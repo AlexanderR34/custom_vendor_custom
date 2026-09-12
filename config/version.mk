@@ -1,7 +1,9 @@
 CUSTOM_BUILD_DATE := $(shell date -u +%Y%m%d-%H%M)
+DIVA_BUILD_DATE := $(shell date +%d/%m/%Y)
+DIVA_BASE_VERSION := 1.1.2
+DIVA_VERSION := Project_Diva_$(DIVA_BASE_VERSION)_$(DIVA_BUILD_DATE)
 
 CUSTOM_PLATFORM_VERSION := 17.0
-DIVA_VERSION := 1.1.2
 
 CUSTOM_VERSION := $(CUSTOM_BUILD)-$(CUSTOM_PLATFORM_VERSION)-$(CUSTOM_BUILD_DATE)
 CUSTOM_VERSION_PROP := seventeen
@@ -14,7 +16,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.diva.version=$(DIVA_VERSION) \
     ro.build.id=Project_Diva \
     ro.system.build.id=Project_Diva \
-    ro.build.display.id=Project_Diva_$(DIVA_VERSION) \
+    ro.build.display.id=$(DIVA_VERSION) \
     net.pixelos.version=$(CUSTOM_VERSION_PROP)
 
 # Updater
