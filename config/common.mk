@@ -93,3 +93,10 @@ include vendor/custom/config/version.mk
 PRODUCT_PACKAGES := $(filter-out Launcher3 Launcher3QuickStep Launcher3QuickStepGo Launcher3Overlay,$(PRODUCT_PACKAGES))
 PRODUCT_DEXPREOPT_SPEED_APPS := $(filter-out Launcher3 Launcher3QuickStep Launcher3QuickStepGo,$(PRODUCT_DEXPREOPT_SPEED_APPS))
 
+# Release keys
+ifeq ($(wildcard certs/releasekey.x509.pem),certs/releasekey.x509.pem)
+    PRODUCT_DEFAULT_DEV_CERTIFICATE := certs/releasekey
+    PRODUCT_EXTRA_RECOVERY_KEYS += certs/otakey
+endif
+
+
