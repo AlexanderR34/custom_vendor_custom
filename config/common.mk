@@ -87,6 +87,11 @@ PRODUCT_PACKAGES += \
     TouchGestures \
     NPlayer
 
+# Freeform Window Manager & Floating Sidebar
+PRODUCT_PACKAGES += \
+    LMOFreeform \
+    LMOFreeformSidebar
+
 # Updater
 include vendor/custom/config/ota.mk
 

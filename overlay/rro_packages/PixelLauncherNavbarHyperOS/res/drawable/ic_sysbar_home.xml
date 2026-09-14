@@ -4,19 +4,19 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
-    android:width="20dp"
-    android:height="20dp"
-    android:viewportWidth="20"
-    android:viewportHeight="20">
+    android:width="22dp"
+    android:height="22dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
 
-    <!-- Outer ring -->
+    <!-- Outer Ring -->
     <path
         android:fillColor="@android:color/white"
         android:fillType="evenOdd"
-        android:pathData="M10,1 C14.97,1 19,5.03 19,10 C19,14.97 14.97,19 10,19 C5.03,19 1,14.97 1,10 C1,5.03 5.03,1 10,1 Z M10,2.6 C14.09,2.6 17.4,5.91 17.4,10 C17.4,14.09 14.09,17.4 10,17.4 C5.91,17.4 2.6,14.09 2.6,10 C2.6,5.91 5.91,2.6 10,2.6 Z" />
+        android:pathData="M12,2.5 C17.25,2.5 21.5,6.75 21.5,12 C21.5,17.25 17.25,21.5 12,21.5 C6.75,21.5 2.5,17.25 2.5,12 C2.5,6.75 6.75,2.5 12,2.5 Z M12,4.5 C16.14,4.5 19.5,7.86 19.5,12 C19.5,16.14 16.14,19.5 12,19.5 C7.86,19.5 4.5,16.14 4.5,12 C4.5,7.86 7.86,4.5 12,4.5 Z" />
 
-    <!-- Inner circle -->
+    <!-- Inner Circle -->
     <path
         android:fillColor="@android:color/white"
-        android:pathData="M10,5.2 C12.65,5.2 14.8,7.35 14.8,10 C14.8,12.65 12.65,14.8 10,14.8 C7.35,14.8 5.2,12.65 5.2,10 C5.2,7.35 7.35,5.2 10,5.2 Z" />
+        android:pathData="M12,6.5 C15.04,6.5 17.5,8.96 17.5,12 C17.5,15.04 15.04,17.5 12,17.5 C8.96,17.5 6.5,15.04 6.5,12 C6.5,8.96 8.96,6.5 12,6.5 Z" />
 </vector>
