@@ -1,7 +1,9 @@
-CUSTOM_BUILD_DATE := $(shell date -u +%Y%m%d-%H%M)
+CUSTOM_BUILD_RANDOM := $(shell python3 -c 'import random; print(f"{random.randint(0, 9999):04d}")')
+CUSTOM_BUILD_DATE_DAY := $(shell date -u +%Y%m%d)
+CUSTOM_BUILD_DATE := $(CUSTOM_BUILD_DATE_DAY)-$(CUSTOM_BUILD_RANDOM)
 DIVA_BUILD_DATE := $(shell date +%d/%m/%Y)
 DIVA_BASE_VERSION := 1.1.2
-DIVA_VERSION := Project_Diva_$(DIVA_BASE_VERSION)_$(DIVA_BUILD_DATE)
+DIVA_VERSION := Project_diva-$(CUSTOM_BUILD_DATE)
 
 CUSTOM_PLATFORM_VERSION := 17.0
 
