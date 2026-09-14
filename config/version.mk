@@ -4,6 +4,8 @@ CUSTOM_BUILD_DATE := $(CUSTOM_BUILD_DATE_DAY)-$(CUSTOM_BUILD_RANDOM)
 DIVA_BUILD_DATE := $(shell date +%d/%m/%Y)
 DIVA_BASE_VERSION := 1.1.2
 DIVA_VERSION := Project_diva-$(CUSTOM_BUILD_DATE)
+DIVA_MAINTAINER := AlexMainMandy
+DIVA_BUILD_TYPE := Official
 
 CUSTOM_PLATFORM_VERSION := 17.0
 
@@ -15,15 +17,16 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.custom.build.date=$(CUSTOM_BUILD_DATE) \
     ro.custom.device=$(CUSTOM_BUILD) \
     ro.custom.version=$(CUSTOM_VERSION) \
+    ro.custom.maintainer=$(DIVA_MAINTAINER) \
     ro.diva.version=$(DIVA_VERSION) \
+    ro.diva.maintainer=$(DIVA_MAINTAINER) \
+    ro.diva.buildtype=$(DIVA_BUILD_TYPE) \
     ro.build.id=Project_Diva \
     ro.system.build.id=Project_Diva \
     ro.build.display.id=$(DIVA_VERSION) \
     net.pixelos.version=$(CUSTOM_VERSION_PROP)
 
-# Updater
-ifeq ($(IS_OFFICIAL),true)
-    PRODUCT_PRODUCT_PROPERTIES += \
-        net.pixelos.build_type=ci \
-        net.pixelos.version=$(CUSTOM_VERSION_PROP)
-endif
+# Updater & Build type
+PRODUCT_PRODUCT_PROPERTIES += \
+    net.pixelos.build_type=official \
+    net.pixelos.version=$(CUSTOM_VERSION_PROP)
