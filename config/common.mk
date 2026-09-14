@@ -70,7 +70,11 @@ endif
 PRODUCT_PACKAGES += \
     FrameworkOverlayCustom \
     GoogleDialerOverlayCustom \
-    SettingsOverlayCustom
+    SettingsOverlayCustom \
+    org.pixelos.overlay.navbar.hyperos.pixellauncher \
+    org.pixelos.overlay.navbar.samsung.pixellauncher \
+    org.pixelos.overlay.navbar.hyperos.sysui \
+    org.pixelos.overlay.navbar.samsung.sysui
 
 # Quick Tap
 ifneq ($(TARGET_SUPPORTS_QUICK_TAP),false)
