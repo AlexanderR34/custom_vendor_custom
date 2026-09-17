@@ -85,7 +85,8 @@ endif
 # TouchGesture
 PRODUCT_PACKAGES += \
     TouchGestures \
-    NPlayer
+    NPlayer \
+    BypassCharge
 
 # Freeform Window Manager & Floating Sidebar
 PRODUCT_PACKAGES += \
