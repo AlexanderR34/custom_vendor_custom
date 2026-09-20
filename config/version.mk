@@ -17,8 +17,8 @@ CUSTOM_VERSION_PROP := seventeen
 
 # Project Diva Platform Version - Reviviendo el BP4A con elegancia
 PRODUCT_PRODUCT_PROPERTIES += \
-    ro.build.version.security_patch=2026-09-05 \
     ro.custom.build.date=$(CUSTOM_BUILD_DATE) \
+
     ro.custom.device=$(CUSTOM_BUILD) \
     ro.custom.version=$(CUSTOM_VERSION) \
     ro.custom.maintainer=$(DIVA_MAINTAINER) \
