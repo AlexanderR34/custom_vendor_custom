@@ -10,4 +10,4 @@ DIVA_MAINTAINER ?= AlexMainMandy
 DIVA_BUILD_TYPE ?= Official
 
 # Versión Base de la ROM
-DIVA_BASE_VERSION ?= 1.1.2
+DIVA_BASE_VERSION ?= 1.2.1
