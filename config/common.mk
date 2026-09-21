@@ -109,4 +109,11 @@ ifeq ($(wildcard certs/releasekey.x509.pem),certs/releasekey.x509.pem)
     PRODUCT_EXTRA_RECOVERY_KEYS += certs/otakey
 endif
 
+# Custom UI Sound Themes, Notifications and Ringtones
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,vendor/custom/prebuilt/common/media/audio,$(TARGET_COPY_OUT_SYSTEM)/media/audio)
+
+
+
+
 
