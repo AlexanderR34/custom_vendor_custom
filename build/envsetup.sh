@@ -41,7 +41,11 @@ function breakfast()
 {
     target=$1
     local variant=$2
-    source ${ANDROID_BUILD_TOP}/vendor/lineage/vars/aosp_target_release
+    if [ -f ${ANDROID_BUILD_TOP}/vendor/custom/vars/aosp_target_release ]; then
+        source ${ANDROID_BUILD_TOP}/vendor/custom/vars/aosp_target_release
+    elif [ -f ${ANDROID_BUILD_TOP}/vendor/lineage/vars/aosp_target_release ]; then
+        source ${ANDROID_BUILD_TOP}/vendor/lineage/vars/aosp_target_release
+    fi
 
     if [ $# -eq 0 ]; then
         # No arguments, so let's have the full menu
