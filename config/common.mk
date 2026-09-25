@@ -91,7 +91,8 @@ PRODUCT_PACKAGES += \
 # Freeform Window Manager & Floating Sidebar
 PRODUCT_PACKAGES += \
     LMOFreeform \
-    LMOFreeformSidebar
+    LMOFreeformSidebar \
+    UdfpsResources
 
 # Updater
 include vendor/custom/config/ota.mk

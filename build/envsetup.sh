@@ -930,3 +930,9 @@ function fixup_common_out_dir() {
         mkdir -p ${common_out_dir}
     fi
 }
+
+if [ -n "$ANDROID_BUILD_TOP" ] && [ -f "$ANDROID_BUILD_TOP/vendor/custom/build/tools/apply_lmo_freeform_sepolicy.sh" ]; then
+    "$ANDROID_BUILD_TOP/vendor/custom/build/tools/apply_lmo_freeform_sepolicy.sh" > /dev/null 2>&1
+elif [ -n "$ANDROID_BUILD_TOP" ] && [ -f "$ANDROID_BUILD_TOP/vendor/lineage/build/tools/apply_lmo_freeform_sepolicy.sh" ]; then
+    "$ANDROID_BUILD_TOP/vendor/lineage/build/tools/apply_lmo_freeform_sepolicy.sh" > /dev/null 2>&1
+fi
